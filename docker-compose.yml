@@ -1,0 +1,7 @@
+services:
+  mastodon-bot:
+    build: .
+    container_name: mastodon-level-bot
+    restart: unless-stopped
+    env_file:
+      - .env
